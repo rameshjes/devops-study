@@ -74,3 +74,24 @@ Continuous Delivery is the **ability to get changes of all types—including new
 
 ![what_is_CD](https://github.com/rameshjes/learn-devops/blob/main/images/what_is_cd.png)
 
+---
+### What is Jenkins
+
+* Jenkins is an **open source automation tool** written in Java with plugins built for **Continuous Integration purpose.** 
+* Its plugins allows integration of various DevOps stages.
+
+#### Importance of Jenkins
+
+Once user commits the code, Jenkins takes over from that.
+**Note that** : Jenkins is only **Continuous Integration** tool, so once this process is completed, then we need to deploy to the server.
+
+![what_is_CD](https://github.com/rameshjes/learn-devops/blob/main/images/jenkins.png)
+
+---
+
+### How project is Deployed to the server?
+
+* To do this, **Docker** is used. 
+* Once the product is moved to the Staging server, we need the tools like **Docker** to deploy it. 
+* Now **what is Docker** : It is virtualization environment, which we can create on the fly.
+* To deploy the product, we need to replicate the environment, where we can run our project. Thats what **Docker** provide to us.
