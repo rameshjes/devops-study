@@ -17,7 +17,7 @@
 
 ---
 **What is Jenkins**: An open source automation server which **enables developers** to reliably **build, test, and deploy their software.**
-
+Note: ```Jenkins is based on Java, so mostly used for Java projects```
 ---
 ## DevOps Stages
 
