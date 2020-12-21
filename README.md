@@ -3,7 +3,7 @@
 
 ## What is DevOps?
 
-![DevOps](https://github.com/rameshjes/learn-devops/blob/master/images/what_is_devops.png)
+![DevOps](https://github.com/rameshjes/learn-devops/blob/main/images/what_is_devops.png)
 
 ## DevOps Stages
 
@@ -17,5 +17,5 @@
 4. Continuous Deployment: Deploying the tested application on the production server for release.
 
 
-![DevOps_Stages](https://github.com/rameshjes/learn-devops/blob/master/images/devops_stages.png)
+![DevOps_Stages](https://github.com/rameshjes/learn-devops/blob/main/images/devops_stages.png)
 
