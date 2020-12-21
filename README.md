@@ -94,4 +94,7 @@ Once user commits the code, Jenkins takes over from that.
 * To do this, **Docker** is used. 
 * Once the product is moved to the Staging server, we need the tools like **Docker** to deploy it. 
 * Now **what is Docker** : It is virtualization environment, which we can create on the fly.
+![Docker](https://github.com/rameshjes/learn-devops/blob/main/images/docker.png)
+
 * To deploy the product, we need to replicate the environment, where we can run our project. Thats what **Docker** provide to us.
+![Docker_Importance](https://github.com/rameshjes/learn-devops/blob/main/images/docker_importance.png)
