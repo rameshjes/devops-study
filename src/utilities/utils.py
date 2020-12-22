@@ -8,7 +8,8 @@ def add(x, y):
 
 
 
-
+def return_string(data):
+    return data
 
 
 
