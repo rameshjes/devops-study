@@ -1,3 +1,5 @@
+import string
+
 def add(x, y):
 
 
@@ -28,3 +30,10 @@ def remove_spaces(x):
 
     
     return str(x).replace(" ", "")
+
+
+def remove_punctuations(text):
+
+    text = str(text)
+    table = text.maketrans('','',  string.punctuation)
+    return text.translate(table)
