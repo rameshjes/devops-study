@@ -28,10 +28,8 @@ jobs:
         with: 
           args: pytest
 
-      # - uses: actions/checkout@main
-      #   with:
-      #     ref: ${{ github.head_ref }}
-      - name: autoyapf
+      # pep8
+      - name: PEP8 Formating
         id: autoyapf
         uses: mritunjaysharma394/autoyapf@v2
         with:
@@ -45,7 +43,7 @@ jobs:
           git config --global user.name 'Ramesh Kumar'
           git config --global user.email 'rameshjes@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git commit -am "Automated autoyapf fixes"
+          git commit -am "Automated formating of code using PEP8 standards"
           git push
 
       # Format the code according to Pep8
