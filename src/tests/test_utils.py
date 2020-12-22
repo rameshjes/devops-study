@@ -18,11 +18,10 @@ def test_remove_spaces(data, result):
 @pytest.mark.parametrize('data, result', [('hello', 'hello'), ('lok', 'lok'),
                                           ('ch ck', 'ch ck')])
 def test_return_string(data, result):
-    assert(return_string(data)) == result
+    assert (return_string(data)) == result
 
-@pytest.mark.parametrize('text, output',[
-    ('he? wasup', 'he wasup'),
-    ('lost...', 'lost')
-])
+
+@pytest.mark.parametrize('text, output', [('he? wasup', 'he wasup'),
+                                          ('lost...', 'lost')])
 def test_remove_punctuations(text, output):
-    assert(remove_punctuations(text)) == output
+    assert (remove_punctuations(text)) == output
