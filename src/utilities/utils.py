@@ -32,6 +32,9 @@ def remove_spaces(x):
     return str(x).replace(" ", "")
 
 
+
+
+
 def remove_punctuations(text):
 
     text = str(text)
