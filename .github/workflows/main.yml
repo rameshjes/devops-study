@@ -28,12 +28,32 @@ jobs:
         with: 
           args: pytest
 
-      # Format the code according to Pep8
-      - name: autopep8
-        id: autopep8
-        uses: peter-evans/autopep8@v1
+      - uses: actions/checkout@master
         with:
-          args: --recursive --in-place --aggressive --aggressive .
+          ref: ${{ github.head_ref }}
+      - name: autoyapf
+        id: autoyapf
+        uses: mritunjaysharma394/autoyapf@v2
+        with:
+          args: --style pep8 --recursive --in-place .
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
+      - name: Push changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Ramesh Kumar'
+          git config --global user.email 'rameshjes@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git commit -am "Automated autoyapf fixes"
+          git push
+
+      # Format the code according to Pep8
+      # - name: autopep8
+      #   id: autopep8
+      #   uses: peter-evans/autopep8@v1
+      #   with:
+      #     args: --recursive --in-place --aggressive --aggressive .
       # Runs a set of commands using the runners shell
       # - name: Run a multi-line script
       #  run: |
