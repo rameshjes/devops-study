@@ -29,8 +29,6 @@ jobs:
           args: pytest
 
       # Format the code according to Pep8
-      run:
-        echo "Run pep8"
       - name: autopep8
         id: autopep8
         uses: peter-evans/autopep8@v1
