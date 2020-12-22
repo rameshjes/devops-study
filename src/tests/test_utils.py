@@ -11,6 +11,10 @@ from utilities.utils import add, remove_spaces, return_string
 def test_add(x, y, result):
     assert add(x, y) == result
 
+
+
+
+
 @pytest.mark.parametrize('data, result',[
     ('he ', 'he'),
     ('h   ello', 'hello'),
@@ -18,6 +22,10 @@ def test_add(x, y, result):
 ])
 def test_remove_spaces(data, result):
     assert(remove_spaces(data)) == result
+
+
+
+
 
 @pytest.mark.parametrize('data, result',[
     ('hello', 'hello'),
