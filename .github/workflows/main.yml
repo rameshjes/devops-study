@@ -45,9 +45,11 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       # Runs all the test cases in the project
       - name: GitHub Action for pytest
-        uses: cclauss/GitHub-Action-for-pytest@master
-        with: 
-          args: pytest
+        run: |
+          pytest
+        # uses: cclauss/GitHub-Action-for-pytest@master
+        # with: 
+          # args: pytest
       # pep8
       # - name: PEP8 Formating
       #   id: autoyapf
