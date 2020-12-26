@@ -1,5 +1,5 @@
 import string
-
+import numpy as np
 
 def add(x, y):
 
@@ -25,4 +25,4 @@ def remove_punctuations(text):
 
 def create_array(d):
 
-    return numpy.array(d)
+    return np.array(d)
