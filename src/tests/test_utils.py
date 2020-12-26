@@ -34,4 +34,4 @@ def test_remove_punctuations(text, output):
 @pytest.mark.parametrize('data, output', [([1,2,3], np.array([1,2,3]))
                                           ])
 def test_create_array(data, output):
-    assert_array_equal(data, output)
+    assert_array_equal(create_array(data), output)
