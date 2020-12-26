@@ -2,11 +2,12 @@ import pytest
 import numpy as np
 from numpy.testing import assert_array_equal
 
-from utilities.utils import add 
+from utilities.utils import add
 from utilities.utils import remove_spaces
-from utilities.utils import  return_string
-from utilities.utils import  remove_punctuations
+from utilities.utils import return_string
+from utilities.utils import remove_punctuations
 from utilities.utils import create_array
+
 
 @pytest.mark.parametrize('x, y, result', [(18, 10, 28), (12, 88, 100),
                                           (0.5, 1.4, 1.9)])
@@ -31,7 +32,7 @@ def test_return_string(data, result):
 def test_remove_punctuations(text, output):
     assert (remove_punctuations(text)) == output
 
-@pytest.mark.parametrize('data, output', [([1,2,3], np.array([1,2,3]))
-                                          ])
+
+@pytest.mark.parametrize('data, output', [([1, 2, 3], np.array([1, 2, 3]))])
 def test_create_array(data, output):
     assert_array_equal(data, output)
