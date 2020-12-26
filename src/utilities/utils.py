@@ -21,3 +21,7 @@ def remove_punctuations(text):
     text = str(text)
     table = text.maketrans('', '', string.punctuation)
     return text.translate(table)
+
+def create_array(d):
+
+    return numpy.array(d)
