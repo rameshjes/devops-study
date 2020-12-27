@@ -15,10 +15,12 @@ from utilities.utils import create_array
 def test_add(x, y, result):
     assert add(x, y) == result
 
+
 @pytest.mark.parametrize('x, y, result', [(18, 10, 8), (12, 88, -76),
                                           (1.5, 1.0, 0.5)])
 def test_subtract(x, y, result):
-    assert  subtract(x, y) == result
+    assert subtract(x, y) == result
+
 
 @pytest.mark.parametrize('data, result', [('he ', 'he'), ('h   ello', 'hello'),
                                           (' ', '')])
