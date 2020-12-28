@@ -10,12 +10,12 @@
 ---
 ## DevOps Stages
 
-[DevOps_Stages](https://github.com/rameshjes/learn-devops/wiki/DevOps-Stages)
+[DevOps Stages](https://github.com/rameshjes/learn-devops/wiki/DevOps-Stages)
 
 
 ## Continuous Integration (CI) and Continuous Delivery (CD)
 
-[CI and_CD](https://github.com/rameshjes/learn-devops/wiki/Continuous-Integration-(CI)-and-Continuous-Delivery-(CD))
+[CI and CD](https://github.com/rameshjes/learn-devops/wiki/Continuous-Integration-(CI)-and-Continuous-Delivery-(CD))
 
 ### What is Jenkins
 
