@@ -4,6 +4,14 @@
 
 ```make build```
 
+* To check whether test cases are working:
+
+```make test```
+
+* To get entry into docker image of the project:
+
+```make run```
+
 ---
 
 ## Tutorial
