@@ -2,7 +2,7 @@
 
 name: learn_devops
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -65,9 +65,9 @@ jobs:
         run: |
           pytest
         # uses: cclauss/GitHub-Action-for-pytest@master
-        # with: 
+        # with:
           # args: pytest
-      
+
       # Format the code according to Pep8
       # - name: autopep8
       #   id: autopep8

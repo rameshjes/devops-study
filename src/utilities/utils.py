@@ -1,4 +1,5 @@
 import string
+
 import numpy as np
 
 
@@ -7,7 +8,7 @@ def add(x, y):
     return x + y
 
 
-def subtract(x,y):
+def subtract(x, y):
 
     return x - y
 
@@ -25,7 +26,7 @@ def remove_spaces(x):
 def remove_punctuations(text):
 
     text = str(text)
-    table = text.maketrans('', '', string.punctuation)
+    table = text.maketrans("", "", string.punctuation)
     return text.translate(table)
 
 
