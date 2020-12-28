@@ -1,5 +1,11 @@
 # learn-devops
 
+* To build docker image of the project:
+
+```make build```
+
+---
+
 ## Tutorial
 
 * [What is DevOps?](https://github.com/rameshjes/learn-devops/wiki/What-is-DevOps%3F)
