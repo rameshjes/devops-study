@@ -16,8 +16,8 @@ Note: html and css code are copied from :https://github.com/krishnaik06/Deployme
 
 app = Flask("sentiment-classifier-ml")
 
-vectorizer = joblib.load(open("vectorizer.pkl", "rb"))
-model = joblib.load(open("model.pkl", "rb"))
+vectorizer = joblib.load(open("src/vectorizer.pkl", "rb"))
+model = joblib.load(open("src/model.pkl", "rb"))
 labels = ["positive", "negative"]
 
 
