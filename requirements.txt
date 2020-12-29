@@ -3,3 +3,5 @@ pytest==3.7.0
 toml==0.10.2
 numpy==1.19.4
 pre-commit
+sklearn==0.19.2
+joblib==1.0.0
