@@ -14,7 +14,7 @@ user review
 Note: html and css code are copied from :https://github.com/krishnaik06/Deployment-flask
 """
 
-app = Flask(__name__)
+app = Flask("sentiment-classifier-ml")
 
 vectorizer = joblib.load(open("vectorizer.pkl", "rb"))
 model = joblib.load(open("model.pkl", "rb"))
