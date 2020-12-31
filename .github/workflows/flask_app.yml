@@ -13,7 +13,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  gitPytest:
+  herokuDeployment:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -65,11 +65,6 @@ jobs:
         run: |
           pytest src/tests/test_app.py
 
-  herokuDeployment:
-    strategy:
-      max-parallel: 1
-
-    steps:
       - name: Deploy to Heroku
         env:
           HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
