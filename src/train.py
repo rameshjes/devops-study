@@ -42,7 +42,10 @@ if __name__ == "__main__":
 
     data = load_data("../data/imdb_dataset.csv")
 
-    data.loc[:, "sentiment"] = data.sentiment.map({"positive": 1, "negative": 0})
+    data.loc[:, "sentiment"] = data.sentiment.map({
+        "positive": 1,
+        "negative": 0
+    })
     print(data.sentiment.unique())
     vectorizer, X, Y = preprocess_train(data)
 
