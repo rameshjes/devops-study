@@ -3,3 +3,7 @@ pytest==3.7.0
 toml==0.10.2
 numpy==1.19.4
 pre-commit
+scikit-learn==0.24.0
+joblib==1.0.0
+gunicorn
+flask
