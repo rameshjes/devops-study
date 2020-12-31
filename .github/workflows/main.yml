@@ -63,7 +63,7 @@ jobs:
       # Runs all the test cases in the project
       - name: GitHub Action for pytest
         run: |
-          pytest
+          pytest src/tests/test_utils.py
         # uses: cclauss/GitHub-Action-for-pytest@master
         # with:
           # args: pytest
