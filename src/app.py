@@ -18,7 +18,17 @@ app = Flask("sentiment-classifier-ml")
 
 vectorizer = joblib.load(open("vectorizer.pkl", "rb"))
 model = joblib.load(open("model.pkl", "rb"))
-labels = ["positive", "negative"]
+labels = ["negative", "positive"]
+
+
+def get_preprocessed_text(text):
+
+    return vectorizer.transform([str(text)])
+
+
+def find_label(preprocessed_text):
+
+    return model.predict(preprocessed_text)
 
 
 @app.route("/")
@@ -33,8 +43,9 @@ def predict():
     sentence = " ".join([str(x) for x in request.form.values()])
     # print(f"sentence {sentence}")
     text = str(sentence).split()
-    preprocessed_text = vectorizer.transform([str(text)])
-    prediction = model.predict(preprocessed_text)
+    preprocessed_text = get_preprocessed_text(text)
+    prediction = find_label(preprocessed_text)
+
     return render_template(
         "index.html",
         input_text="Input is: {}".format(sentence),
