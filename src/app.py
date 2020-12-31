@@ -2,7 +2,6 @@ import joblib
 from flask import Flask
 from flask import render_template
 from flask import request
-
 """
 This script enable users to
 write review in the text field,
