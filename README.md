@@ -1,4 +1,9 @@
-# learn-devops
+# Exploring DevOps 
+
+### Flask App
+
+Flask App is deployed on Heroku, Can be accessed -> [Sentiment Classifier](https://sentiment-classifier-ml.herokuapp.com/)
+### Make File
 
 * To build docker image of the project:
 
